@@ -15,7 +15,7 @@ docker pull gogs/gogs
 docker run -d --name=gogs -p 10070:3000 -v gog-data:/data gogs/gogs
 ```
 
-4. Your container should be running now - go to localhost:10070 to set up your server.
+4. Your container should be running now - go to `localhost:10070` to set up your server.
 
 > I disabled SSH because it seemed pretty unecessary.
 
