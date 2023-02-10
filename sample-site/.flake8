@@ -1,0 +1,4 @@
+# flake8 and black sometimes conflict, this file ignores flake8 in favour of black
+[flake8]
+max-line-length = 88
+extend-ignore = E203, E266, E402, E501, W503, F403, F401
