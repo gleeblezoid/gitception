@@ -4,10 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
-pre-commit = "*"
-pytest = "*"
-coverage = "*"
 
 [dev-packages]
 
