@@ -2,6 +2,8 @@
 
 Git in git with git - git it?
 
+Potato.
+
 Check out more information at [skills.github.com](skills.github.com) and [git-scm.com/doc](https://git-scm.com/doc
 ).
 
