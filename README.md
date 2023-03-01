@@ -2,6 +2,9 @@
 
 Git in git with git - git it?
 
+Check out more information at [skills.github.com](skills.github.com) and [git-scm.com/doc](https://git-scm.com/doc
+).
+
 ## Setting up your gogs repo in macOS
 
 1. Install docker desktop and the docker command line tools.
