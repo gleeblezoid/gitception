@@ -2,44 +2,26 @@
 
 Git in git with git - git it?
 
-Check out more information at [skills.github.com](skills.github.com) and [git-scm.com/doc](https://git-scm.com/doc
-).
+##  What's this repo for?
 
-## Setting up your gogs repo in macOS
+This repo was set up to provide additional resources for folks planning to learn the basics of using version control or run a session for students wishing to do so. It was originally created for a seminar held at Oxford University intended for second year students embarking on a group project.
 
-1. Install docker desktop and the docker command line tools.
+## Basics of using git
 
-2. Clone this repo
+### Setting up git and github
 
-3. `cd` to the repo folder and run the following:
+The docs on github provide a fantastic [quickstart guide](https://docs.github.com/en/get-started/quickstart) which you should really check out.
 
-```sh
-docker pull gogs/gogs
-docker run -d --name=gogs -p 10070:3000 -v gog-data:/data gogs/gogs
-```
+A basic rundown of what's needed though is:
 
-4. Your container should be running now - go to `localhost:10070` to set up your server.
+1. Install git on your machine - you can find it [here](https://git-scm.com/downloads) or use your favourite package manager.
+1. Set up a global git username: `git config --global user.name "<your username>"`.
+1. Set up a global git email: `git config --global user.email "<your email>"`.
+1. Go to a repo (maybe use this one) and run a clone using HTTPS (in your command line app of choice): `git clone https://github.com/gleeblezoid/gitception.git` 
+1. You'll be prompted for GitHub login details when you do this - when you're prompted for a password you should generate a PAT instead and enter that, you'll need to use [this page](https://github.com/settings/tokens) to generate one if you're not prompted to authenticate using your web browser.
 
-> I disabled SSH because it seemed pretty unecessary.
+> You can use <https://github.com/git-ecosystem/git-credential-manager> to help with safely storing your credentials.
 
-Starting gogs:
+### Further resources
 
-```sh
-docker start gogs
-```
-
-Stopping gogs:
-
-```sh
-docker stop gogs
-```
-
-## Using the sample site
-
-1. Create a repo in your gogs server called something useful - I used `potato`
-2. `git clone` your repo to somewhere in your local filesystem
-3. Copy the files from the `sample site` folder into your `potato` (or equivalent) repo folder
-4. Do the `git add`,`git commit`, `git push` dance to update your gogs repo
-5. Run your site with `python3 app.py`
-6. Access your site on `localhost:8080`
-7. Mess around with it or simply admire your local version controlled potatoes
+For more information check out the resources at [skills.github.com](skills.github.com) and [git-scm.com/doc](https://git-scm.com/doc).
