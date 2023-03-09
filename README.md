@@ -24,7 +24,7 @@ A basic rundown of what's needed though is:
 
 ### Covering the basics in an hour
 
-This section is intended for folks wanting a summary of the seminar contents or run their own session about version control.
+This section is intended for folks wanting a summary of the seminar contents or to run their own session about version control.
 
 #### Git Core Concepts
 
