@@ -73,7 +73,7 @@ If you know these commands then you can do most of what you need with git.
 
 ##### Not everything should be tracked in your repo
 
-Use a [.gitignore](https://git-scm.com/docs/gitignore) file - when you set up a repo in GitHub you have the option to auto-generate one for your programming language, there's one in this repo for the demo site too [here](https://github.com/gleeblezoid/gitception/blob/32397858a2f801ddba3a72828ee8c47b6da8be67/sample-site/.gitignore).
+Use a [.gitignore](https://git-scm.com/docs/gitignore) file - when you set up a repo in GitHub you have the option to auto-generate one for your programming language, there's one in this repo for the demo site too [here](https://github.com/gleeblezoid/gitception/blob/main/sample-site/.gitignore).
 
 ##### Protect your secrets
 
@@ -94,6 +94,6 @@ Version control is a great tool but it can't do everything! You need to have a c
 
 For more information check out the resources at [skills.github.com](skills.github.com) and [git-scm.com/doc](https://git-scm.com/doc).
 
-If you're planning to run a locally hosted git demo check out this repo's doc on configuring a gogs server [here](https://github.com/gleeblezoid/gitception/blob/884ae2bdfb218b87331511acf3b2e0b7671bc01e/docs/setting_up_a_gogs_demo_server.md).
+If you're planning to run a locally hosted git demo check out this repo's doc on configuring a gogs server [here](https://github.com/gleeblezoid/gitception/blob/main/docs/setting_up_a_gogs_demo_server.md).
 
-There's also a sample Flask site [here](https://github.com/gleeblezoid/gitception/blob/884ae2bdfb218b87331511acf3b2e0b7671bc01e/sample-site) if you want something to play around with - you'll need python3, pipenv, and pre-commit installed.
+There's also a sample Flask site [here](https://github.com/gleeblezoid/gitception/blob/main/sample-site) if you want something to play around with - you'll need python3, pipenv, and pre-commit installed.
