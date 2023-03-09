@@ -6,16 +6,16 @@ If you want to demonstrate version control but won't have access to the Internet
 
 1. Install docker desktop and the docker command line tools.
 
-1. Clone this repo
+2. Clone this repo
 
-1. `cd` to the repo folder and run the following:
+3. `cd` to the repo folder and run the following:
 
 ```sh
 docker pull gogs/gogs
 docker run -d --name=gogs -p 10070:3000 -v gog-data:/data gogs/gogs
 ```
 
-1. Your container should be running now - go to `localhost:10070` to set up your server.
+4. Your container should be running now - go to `localhost:10070` to set up your server.
 
 > I disabled SSH because it seemed pretty unecessary.
 
