@@ -45,7 +45,50 @@ Some technical fundamentals that will help git make more sense.
 
 > For relatively small group project a feature workflow is probably the best to use - if you've worked on a larger OSS project you might have encountered a forking workflow.
 
+#### Why use version control?
 
+Some of the top reasons for using version control.
+
+- Even solo projects benefit from having somewhere to live where you can manage changes.
+- Version control (particularly with a distributed system like git) allows multiple people to work on the same thing remotely, sync or async, and by splitting work up.
+- Issues and pull requests are great for setting up tasks and communicating with each other on changes.
+- The ability to track and revert changes, and branch your code, means you can try things out and safely make mistakes or break things.
+- Having a change history allows you to really look at what worked and what didn't for your project.
+- It's a lot easier to share your work and get help from other people without exposing more of your work than you want to.
+
+#### Things to bear in mind
+
+Some of the gotchas or really usefull things to know when using git and GitHub.
+
+##### The 99% workflow
+
+You’ll need to `git clone` to get your code to your machine from your remote repo but then mostly you’ll…
+
+- `git pull` - update code to latest before making changes
+- `git add .` - line up changes for commit
+- `git commit -m “message”` - commit your changes with a description
+- `git push` - push your commit to your remote repo
+
+If you know these commands then you can do most of what you need with git.
+
+##### Not everything should be tracked in your repo
+
+Use a [.gitignore](https://git-scm.com/docs/gitignore) file - when you set up a repo in GitHub you have the option to auto-generate one for your programming language, there's one in this repo for the demo site too [here](https://github.com/gleeblezoid/gitception/blob/32397858a2f801ddba3a72828ee8c47b6da8be67/sample-site/.gitignore).
+
+##### Protect your secrets
+
+- Don't put secrets in your code: Use environment variables, a password manager API, or some kind of vault.
+- Separate testing from production: Keep secrets used in local testing separate from production in case of leaks when a change is pushed.
+- If you ever push something sensitive to GitHub (like a password) assume it is exposed and remove the danger (e.g. by changing the password for that service). Even if you remove the commit from your Git History, once it's in GitHub there's a URL associated with your commit that can still be reached via the API.
+- GitHub has [secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning), this is great, it doesn't remove the need for basic sensible security practices.
+
+##### Keep changes small and talk to each other
+
+Version control is a great tool but it can't do everything! You need to have a consensus on how to work on your project and talk to each other about changes and how they'll be managed.
+
+- Try keeping to one change per branch/pull request: The smaller and easier to describe a change is, the more sense your git history will make.
+- Be descriptive, use branches: Separate changes into branches so you can talk about them before merging to main.
+- Decide how you’re going to work: Version control is a tool, you need to agree how you’ll assign and manage work.
 
 ### Further resources
 
