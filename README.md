@@ -1,6 +1,6 @@
-# gitception
+# Git The Basics
 
-Git in git with git - git it?
+Fundamentals of using git, in an hour or less.
 
 ##  What's this repo for?
 
