@@ -58,7 +58,7 @@ Some of the top reasons for using version control.
 
 #### Things to bear in mind
 
-Some of the gotchas or really usefull things to know when using git and GitHub.
+Some of the gotchas or really useful things to know when using git and GitHub.
 
 ##### The 99% workflow
 
